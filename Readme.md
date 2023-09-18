@@ -5,7 +5,7 @@
 - It is maily of rows and columns scheme
 - columns are also called as keys, attributes feilds.
 - Rows are also called as records
-- The most important part of sql cloumn is the PRIMARY KEY. An SQL column always starts with the primary key and followed by values 
+- The most important part of sql cloumn is the PRIMARY KEY. An SQL column always starts with the primary key and followed by values
 - The primary key is important because its can be used for data saving which means when combining two tables we can combine them by the id of the user rather than teh whole data of the user.
 
 ```sql
@@ -19,8 +19,8 @@ CREATE TABLE Employees (
 ```
 
 - Here in table there are 2 words NULL and NOT NULL.
-    NULL- It states that the value can be empty.
-    NOT NULL- It states that we have to always provide the value.
+  NULL- It states that the value can be empty.
+  NOT NULL- It states that we have to always provide the value.
 
 ## CURD Operations
 
@@ -28,7 +28,7 @@ CREATE TABLE Employees (
        Create    |   Insert
        Update    |   Update
        Read      |   Select
-       Delete    |   Delete 
+       Delete    |   Delete
 
 1. CREATE(Inset):-
 
@@ -36,21 +36,25 @@ CREATE TABLE Employees (
 INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary)
 VALUES (6, 'Sarah', 'Johnson', 'Finance', 5500.00);
 ```
+
 - This Query creates a new record for the employee table.
 
-
 2. Read (SELECT):
+
 ```sql
 SELECT * FROM Employees;
 ```
+
 - Here star selects all the attributes from the employee table.
+
 ```sql
 SELECT * FROM Employees WHERE Department = 'IT';
 ```
+
 - Here we are specifing what attributes to be selected.
 
-
 3. Update (UPDATE):
+
 ```sql
 UPDATE Employees
 SET Department = 'Marketing', Salary = 6000.00
@@ -58,6 +62,7 @@ WHERE EmployeeID = 2;
 ```
 
 4. Delete (DELETE):
+
 ```sql
 DELETE FROM Employees
 WHERE EmployeeID = 5;
@@ -68,32 +73,37 @@ WHERE EmployeeID = 5;
 - Joining of two tables is a vey important concpet in SQL. It is mainly done by taking the priamry id from the two tables.
 
 TABLE ONE:
-EmployeeID | FirstName | LastName   | Department  | Salary
---------------------------------------------------------
-1          | John      | Doe        | 1           | 5000.00
-2          | Jane      | Smith      | 2           | 4500.00
-3          | David     | Johnson    | 3           | 6000.00
-4          | Emily     | Williams   | 1           | 5500.00
-5          | Michael   | Brown      | 4           | 4000.00
+EmployeeID | FirstName | LastName | Department | Salary
 
-TABLE TWO: 
+---
+
+1 | John | Doe | 1 | 5000.00
+2 | Jane | Smith | 2 | 4500.00
+3 | David | Johnson | 3 | 6000.00
+4 | Emily | Williams | 1 | 5500.00
+5 | Michael | Brown | 4 | 4000.00
+
+TABLE TWO:
 DepartmentID | DepartmentName
----------------------------
-1            | IT
-2            | HR
-3            | Sales
-4            | Marketing
 
+---
+
+1 | IT
+2 | HR
+3 | Sales
+4 | Marketing
 
 ```sql
 SELECT Employees.EmployeeID, Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
 JOIN Departments ON Employees.Department = Departments.DepartmentID;
 ```
+
 - In this example we are joining the two tables with respect to the primary id's.
 
+# DATABASE
 
+## WHAT IS DATA?
 
-
-
-
+Any sort of information that is stored is called data.
+There are many types of data like contact details, credentials, messages, emails, etc.
