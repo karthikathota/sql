@@ -107,3 +107,5 @@ JOIN Departments ON Employees.Department = Departments.DepartmentID;
 
 Any sort of information that is stored is called data.
 There are many types of data like contact details, credentials, messages, emails, etc.
+Not only the conventional type but also users activity on a web application can be called as data.  
+Companies mine this data i.e they get useful inforamtion like product reviews, popularity of a product etc.
