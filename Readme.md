@@ -1,5 +1,7 @@
 # SQL
 
+- SQL is used to work on RDBMS.
+- SQL is a declarative( User specifies what should be done rather than how it should be done).
 - SQL stands for Structured Query Language
 - It is the Language that is used to access database and manage it.
 - It is maily of rows and columns scheme
@@ -22,7 +24,7 @@ CREATE TABLE Employees (
   NULL- It states that the value can be empty.
   NOT NULL- It states that we have to always provide the value.
 
-## CURD Operations
+## CRUD Operations
 
     ABBREVATION  |   SQL
        Create    |   Insert
@@ -68,6 +70,41 @@ DELETE FROM Employees
 WHERE EmployeeID = 5;
 ```
 
+## Other Operations
+
+1. Update a value that is already given.
+
+```sql
+Update
+  Employees
+set
+  LastName="Athota"
+WHERE
+  FirstName="Sai";
+```
+
+2. Delte a table from database.
+
+```sql
+DROP TABLE Employees
+```
+
+3. Rename a column.
+
+```sql
+ALTER TABLE
+  Employees RENAME COLUMN LastName to Fullname;
+```
+
+4. Add a new column
+
+```sql
+ALTER TABLE
+  Employees
+ADD
+  COLUMN age int;
+```
+
 ## JOINING TWO TABLES.
 
 - Joining of two tables is a vey important concpet in SQL. It is mainly done by taking the priamry id from the two tables.
@@ -100,12 +137,3 @@ JOIN Departments ON Employees.Department = Departments.DepartmentID;
 ```
 
 - In this example we are joining the two tables with respect to the primary id's.
-
-# DATABASE
-
-## WHAT IS DATA?
-
-Any sort of information that is stored is called data.
-There are many types of data like contact details, credentials, messages, emails, etc.
-Not only the conventional type but also users activity on a web application can be called as data.  
-Companies mine this data i.e they get useful inforamtion like product reviews, popularity of a product etc.
