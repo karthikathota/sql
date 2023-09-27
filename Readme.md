@@ -137,3 +137,25 @@ JOIN Departments ON Employees.Department = Departments.DepartmentID;
 ```
 
 - In this example we are joining the two tables with respect to the primary id's.
+
+### Comparison Operators
+
+Equals to => "="  
+Not equal to => "<>"  
+Greater than => ">"  
+Greater than or equals to => ">="  
+Less than => "<"  
+Less than or equals to => "<="
+
+### String operators
+
+To get all the rows that have matching patters we sue "LIKE".
+
+"%" => If it is in the ** end ** it matches all the words that start with given word. If it is in the ** begning ** it matches all the words that end with give word. If the word is ** encapsulated ** in "%" then matches all the word that contain given word.  
+FOR EXAMPLE:-  
+"pant%" this matches all the words starting with pants  
+"%pant" this matches all the words that end with pants
+
+"_" => This matches all the words that are same with a only charachter mroe than the given word.
+FOR EXAMPLE:-  
+"pant_" matches word like pants etc, where s is is onlt charachter.
