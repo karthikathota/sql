@@ -151,7 +151,7 @@ Less than or equals to => "<="
 
 To get all the rows that have matching patters we sue "LIKE".
 
-"%" => If it is in the ** end ** it matches all the words that start with given word. If it is in the ** begning ** it matches all the words that end with give word. If the word is ** encapsulated ** in "%" then matches all the word that contain given word.  
+"%" => If it is in the **end** it matches all the words that start with given word. If it is in the **begning** it matches all the words that end with give word. If the word is **encapsulated** in "%" then matches all the word that contain given word.  
 FOR EXAMPLE:-  
 "pant%" this matches all the words starting with pants  
 "%pant" this matches all the words that end with pants
