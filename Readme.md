@@ -159,3 +159,30 @@ FOR EXAMPLE:-
 "_" => This matches all the words that are same with a only charachter mroe than the given word.
 FOR EXAMPLE:-  
 "pant_" matches word like pants etc, where s is is onlt charachter.
+
+### Logical Operators
+
+1. AND:- Retrives all the rows that statisfy the both given conditions.
+2. OR:- Retrives all the rows which statisfy atleast one of the given conditions.
+3. NOT:- Retrives all the rows which donot statisfy the given conditions
+
+PRECEDENCE :- NOT > AND > OR
+
+### ORDER BY
+
+Ascending => ASC  
+Descending => DESC
+
+## Pagination
+
+These are two clauses in Pagination which are used to limit the data retrieved they are LIMIT AND OFFSET
+
+### LIMIT
+
+LIMIT clause is used to specify the number of rows.
+
+### OFFSET
+
+OFFSET clause is used to specify the position from where to rows are to be selected.
+
+Rows are selected from OFFSET+1 to LIMIT+OFFSET.
