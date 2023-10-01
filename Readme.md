@@ -186,3 +186,30 @@ LIMIT clause is used to specify the number of rows.
 OFFSET clause is used to specify the position from where to rows are to be selected.
 
 Rows are selected from OFFSET+1 to LIMIT+OFFSET.
+
+## AGREGATIONS
+
+Combining multiple values into a singel value.
+
+sum(c1) => Returns sum of all the values in c1.  
+Avg(c1) => Returns avg value of column c1.  
+similarly we have MAX,MIN,COUNT etc.
+
+AS => It can be used to provide temporary names for column
+
+```sql
+SELECT c1 AS a1,c2 AS a2....
+```
+
+### GROUP BY
+
+```sql
+SELECT
+  name,
+  sum(score)
+FROM
+  PLAYER_MATCH_DETAILS
+GROUP BY
+  name;
+
+```
