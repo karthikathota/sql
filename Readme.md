@@ -213,3 +213,26 @@ GROUP BY
   name;
 
 ```
+
+## FUNCTIONS
+
+### strftime()
+
+It is a data function which can be used in various clauses to extract month and year from date field.
+
+```sql
+strftime(format, field_name);
+```
+
+%Y => Extracts the year.  
+%m => extracts the month.
+
+Eg :-
+Find out the no of cars sold per month in 2020
+
+```sql
+select strftime("%m",dates) as month
+count(*) as total_cars
+where strftime("%Y",dates) == '2020'
+group by month
+```
