@@ -236,3 +236,23 @@ count(*) as total_cars
 where strftime("%Y",dates) == '2020'
 group by month
 ```
+
+# ER MODEL
+
+There 3 main core parts to an ER model they are
+
+1. Entity
+2. Entity Type
+3. Relationships
+
+### Entity
+
+Real worls objects/models are called as Entities in ER model. Properties of these objects are called as attributes of the entities. Like name and age of a person etc. The uniquely identifiable entities are called as key attributes.
+
+### Entity Type
+
+Collection of entities with same attributes are called as Entity Type.
+
+### Relationships
+
+Association between the entities is called as Relationships. There are 3 types of Relationships in ER MODEL they are **_One-to-One Relationships_**, **\*One-to-Many Relationships**, **_Many-to-one Relationships_**.
