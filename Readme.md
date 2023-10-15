@@ -114,10 +114,10 @@ EmployeeID | FirstName | LastName | Department | Salary
 
 ---
 
-1 | John | Doe | 1 | 5000.00
-2 | Jane | Smith | 2 | 4500.00
-3 | David | Johnson | 3 | 6000.00
-4 | Emily | Williams | 1 | 5500.00
+1 | John | Doe | 1 | 5000.00  
+2 | Jane | Smith | 2 | 4500.00  
+3 | David | Johnson | 3 | 6000.00  
+4 | Emily | Williams | 1 | 5500.00  
 5 | Michael | Brown | 4 | 4000.00
 
 TABLE TWO:
@@ -125,9 +125,9 @@ DepartmentID | DepartmentName
 
 ---
 
-1 | IT
-2 | HR
-3 | Sales
+1 | IT  
+2 | HR  
+3 | Sales  
 4 | Marketing
 
 ```sql
