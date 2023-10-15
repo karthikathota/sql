@@ -255,4 +255,36 @@ Collection of entities with same attributes are called as Entity Type.
 
 ### Relationships
 
-Association between the entities is called as Relationships. There are 3 types of Relationships in ER MODEL they are **_One-to-One Relationships_**, **\*One-to-Many Relationships**, **_Many-to-one Relationships_**.
+Association between the entities is called as Relationships. There are 3 types of Relationships in ER MODEL they are **_One-to-One Relationships_**, **_One-to-Many Relationships_**, **_Many-to-one Relationships_**.
+
+### One-to-ONE Relationships
+
+An entity is realated to only one entity.
+
+### One-to-Many Relationships
+
+An entity is realted to many other entities and vice versa.
+
+### Many-to-Many Relationships
+
+Many entities are related to many entities.
+
+### CREATING PRIAMRY KEY
+
+```sql
+CREATE TABLE table_name{
+  INTEGER NOT NULL PRIMARY KEY,
+}
+```
+
+### ENABLING FOREIGN KEY
+
+```sql
+CREATE TABLE table_name{
+  INTEGER NOT NULL PRIMARY KEY,
+
+FOREIGN KEY (column_name) REFERENCES table1(id) ON DELETE CASCADE
+}
+```
+
+ON DELETE CASCADE specifies that when a row in the referenced table (table1) is deleted, the corresponding rows in the current table will be deleted as well.
